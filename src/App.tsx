@@ -1,19 +1,33 @@
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import Navigation from './components/Navigation';
-// import Footer from './components/Footer';
-// import HomePage from './pages/HomePage';
-// import AboutPage from './pages/AboutPage';
-// import ServicesPage from './pages/ServicesPage';
-// import PortfolioPage from './pages/PortfolioPage';
-// import ExperiencePage from './pages/ExperiencePage';
-// import ContentPage from './pages/ContentPage';
-// import ContactPage from './pages/ContactPage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navigation from './components/Navigation';
+import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ServicesPage from './pages/ServicesPage';
+import PortfolioPage from './pages/PortfolioPage';
+import ExperiencePage from './pages/ExperiencePage';
+import ContentPage from './pages/ContentPage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+    <Router>
+      <div className="flex flex-col min-h-screen">
+        <Navigation />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/portfolio" element={<PortfolioPage />} />
+            <Route path="/experience" element={<ExperiencePage />} />
+            <Route path="/content" element={<ContentPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
