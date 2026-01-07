@@ -1,4 +1,4 @@
-import { Project, Experience, Service, SocialLink } from '@/types';
+import type { Project, Experience, Service, SocialLink } from '@/types';
 
 // Projets Portfolio
 export const projects: Project[] = [
