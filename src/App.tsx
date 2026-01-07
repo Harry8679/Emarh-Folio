@@ -11,23 +11,9 @@ import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
-    <Router>
-      <div className="flex flex-col min-h-screen">
-        <Navigation />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/services" element={<ServicesPage />} />
-            <Route path="/portfolio" element={<PortfolioPage />} />
-            <Route path="/experience" element={<ExperiencePage />} />
-            <Route path="/content" element={<ContentPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <h1 className="text-3xl font-bold underline">
+    Hello world!
+  </h1>
   );
 }
 
