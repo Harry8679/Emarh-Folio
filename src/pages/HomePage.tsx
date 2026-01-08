@@ -216,7 +216,7 @@ const HomePage = () => {
       </section>
 
       {/* CTA Final */}
-      <section className="py-20 bg-gradient-to-r from-primary-600 to-purple-600">
+      <section className="py-20 bg-linear-to-r from-primary-600 to-purple-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
