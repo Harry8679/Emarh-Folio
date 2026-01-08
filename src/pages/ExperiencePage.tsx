@@ -1,11 +1,11 @@
 import { useState, useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, Text, Sphere, Html } from '@react-three/drei';
+import { OrbitControls, Sphere, Html } from '@react-three/drei';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Briefcase, Calendar } from 'lucide-react';
 import * as THREE from 'three';
 import { experiences } from '@/data/portfolio';
-import { Experience as ExperienceType } from '@/types';
+import type { Experience as ExperienceType } from '@/types';
 
 // Composant pour une planète d'expérience en 3D
 interface PlanetProps {
@@ -115,20 +115,18 @@ const Stars = () => {
   const positions = new Float32Array(count * 3);
   
   for (let i = 0; i < count; i++) {
+    // eslint-disable-next-line react-hooks/purity
     positions[i * 3] = (Math.random() - 0.5) * 50;
+    // eslint-disable-next-line react-hooks/purity
     positions[i * 3 + 1] = (Math.random() - 0.5) * 50;
+    // eslint-disable-next-line react-hooks/purity
     positions[i * 3 + 2] = (Math.random() - 0.5) * 50;
   }
 
   return (
     <points>
       <bufferGeometry>
-        <bufferAttribute
-          attach="attributes-position"
-          count={count}
-          array={positions}
-          itemSize={3}
-        />
+        <bufferAttribute attach="attributes-position" args={[positions, 3]}/>
       </bufferGeometry>
       <pointsMaterial size={0.05} color="white" />
     </points>
