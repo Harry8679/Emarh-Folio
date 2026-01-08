@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
+import ExperiencePage from './pages/ExperiencePage';
 
 function App() {
   return (
