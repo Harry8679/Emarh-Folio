@@ -37,7 +37,7 @@ const HomePage = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section with 3D */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-linear-to-br from-blue-50 via-white to-purple-50">
         {/* Canvas 3D en arrière-plan */}
         <div className="absolute inset-0 z-0">
           <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
