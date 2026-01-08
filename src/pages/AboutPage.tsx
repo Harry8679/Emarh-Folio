@@ -29,7 +29,7 @@ const AboutPage = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-600 to-purple-600 py-20">
+      <section className="bg-linear-to-r from-primary-600 to-purple-600 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -133,7 +133,7 @@ const AboutPage = () => {
             {personalInfo.skills.map((skill) => (
               <span
                 key={skill}
-                className="px-6 py-3 bg-gradient-to-r from-primary-50 to-purple-50 border-2 border-primary-200 text-primary-700 rounded-lg font-semibold hover:scale-105 transition-transform"
+                className="px-6 py-3 bg-linear-to-r from-primary-50 to-purple-50 border-2 border-primary-200 text-primary-700 rounded-lg font-semibold hover:scale-105 transition-transform"
               >
                 {skill}
               </span>
@@ -143,7 +143,7 @@ const AboutPage = () => {
       </section>
 
       {/* Double Casquette */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+      <section className="py-20 bg-linear-to-br from-blue-50 to-purple-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
