@@ -22,7 +22,7 @@ const ServicesPage = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-600 to-purple-600 py-20">
+      <section className="bg-linear-to-r from-primary-600 to-purple-600 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -70,7 +70,7 @@ const ServicesPage = () => {
                     <h3 className="text-lg font-semibold text-gray-900">Ce que j'offre :</h3>
                     {service.features.map((feature, idx) => (
                       <div key={idx} className="flex items-start space-x-3">
-                        <div className="flex-shrink-0 w-6 h-6 bg-primary-100 rounded-full flex items-center justify-center">
+                        <div className="shrink-0 w-6 h-6 bg-primary-100 rounded-full flex items-center justify-center">
                           <Check className="w-4 h-4 text-primary-600" />
                         </div>
                         <span className="text-gray-600">{feature}</span>
@@ -81,7 +81,7 @@ const ServicesPage = () => {
 
                 {/* Illustration */}
                 <div className={`${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
-                  <div className="card bg-gradient-to-br from-primary-50 to-purple-50 p-12 flex items-center justify-center h-96">
+                  <div className="card bg-linear-to-br from-primary-50 to-purple-50 p-12 flex items-center justify-center h-96">
                     <div className="text-primary-600 opacity-20">
                       {getServiceIcon(service.icon)}
                     </div>
@@ -152,7 +152,7 @@ const ServicesPage = () => {
       </section>
 
       {/* Technologies */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+      <section className="py-20 bg-linear-to-br from-blue-50 to-purple-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -236,7 +236,7 @@ const ServicesPage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-primary-600 to-purple-600">
+      <section className="py-20 bg-linear-to-r from-primary-600 to-purple-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
