@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Code } from 'lucide-react';
 import { projects } from '@/data/portfolio';
-import { Project } from '@/types';
+import type { Project } from '@/types';
 
 type FilterType = 'all' | 'web' | 'mobile' | 'fullstack';
 
