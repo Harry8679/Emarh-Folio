@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Send, CheckCircle, AlertCircle } from 'lucide-react';
-import { personalInfo } from '@/data/portfolio';
 import type { ContactFormData } from '@/types';
+import { personalInfo } from '@/data/portfolio';
 
 type FormStatus = 'idle' | 'sending' | 'success' | 'error';
 
