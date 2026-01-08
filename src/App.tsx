@@ -6,6 +6,8 @@ import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
 import ExperiencePage from './pages/ExperiencePage';
 import PortfolioPage from './pages/PortfolioPage';
+import ContentPage from './pages/ContentPage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
