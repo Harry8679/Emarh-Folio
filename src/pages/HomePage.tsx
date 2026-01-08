@@ -187,7 +187,7 @@ const HomePage = () => {
                 viewport={{ once: true }}
                 className="card group"
               >
-                <div className="h-48 bg-gradient-to-br from-primary-400 to-purple-600 rounded-lg mb-4 flex items-center justify-center">
+                <div className="h-48 bg-linear-to-br from-primary-400 to-purple-600 rounded-lg mb-4 flex items-center justify-center">
                   <Code className="w-16 h-16 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
