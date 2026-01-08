@@ -197,7 +197,7 @@ const ExperienceModal = ({ experience, onClose }: ModalProps) => {
               {experience.missions.map((mission, index) => (
                 <li key={index} className="flex items-start space-x-3">
                   <div
-                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    className="w-2 h-2 rounded-full mt-2 shrink-0"
                     style={{ backgroundColor: experience.color }}
                   />
                   <span className="text-gray-600">{mission}</span>
@@ -235,7 +235,7 @@ const ExperiencePage = () => {
   const [selectedExperience, setSelectedExperience] = useState<ExperienceType | null>(null);
 
   return (
-    <div className="min-h-screen pt-20 bg-gradient-to-b from-gray-900 to-black">
+    <div className="min-h-screen pt-20 bg-linear-to-b from-gray-900 to-black">
       {/* Header */}
       <div className="relative z-10 text-center py-16 px-4">
         <motion.div
@@ -265,7 +265,7 @@ const ExperiencePage = () => {
       </div>
 
       {/* Canvas 3D */}
-      <div className="h-[600px] w-full">
+      <div className="h-150 w-full">
         <Canvas camera={{ position: [0, 0, 10], fov: 75 }}>
           <Experience3DScene onExperienceClick={setSelectedExperience} />
         </Canvas>
