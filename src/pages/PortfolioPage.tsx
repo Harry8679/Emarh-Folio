@@ -22,7 +22,7 @@ const PortfolioPage = () => {
   return (
     <div className="min-h-screen pt-20 bg-gray-50">
       {/* Header */}
-      <section className="bg-gradient-to-r from-primary-600 to-purple-600 py-20">
+      <section className="bg-linear-to-r from-primary-600 to-purple-600 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -93,7 +93,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
       className="card group hover:scale-[1.02] transition-transform duration-300"
     >
       {/* Image/Placeholder */}
-      <div className="h-48 bg-gradient-to-br from-primary-400 to-purple-600 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
+      <div className="h-48 bg-linear-to-br from-primary-400 to-purple-600 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
         <Code className="w-16 h-16 text-white/80" />
         {project.featured && (
           <div className="absolute top-4 right-4 bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-xs font-bold">
