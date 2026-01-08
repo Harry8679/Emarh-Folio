@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
 import ExperiencePage from './pages/ExperiencePage';
+import PortfolioPage from './pages/PortfolioPage';
 
 function App() {
   return (
